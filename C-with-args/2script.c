@@ -10,7 +10,7 @@ int main(int argc, char *argv[]){
                 printf("Got a and it's argument: %s\n", optarg);// optarg is the value that I will provide after specifying the a option
                 break;
             case 'd':
-                printf("Got the d option from the cmd");
+                printf("Got the d option from the cmd\n");
                 break;
             default:
                 printf("No good option stranger");
@@ -19,6 +19,12 @@ int main(int argc, char *argv[]){
     }
     argc-= optind;
     argv += optind;
+    
+    int i = 0;
+    while (i < argc){
+        printf("%s\n", argv[i]);
+        i++;
+    }
 
     return 0;
 }
