@@ -11,6 +11,8 @@ void reverse_string(char *s) {
     printf("\n");
 }
 
+
+
 int main() {
 	char *s = "SOmething";
     reverse_string(s);
